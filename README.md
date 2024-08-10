@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Interactive Chess Game</h1>
+    <h1>Multiplayer Chess Game</h1>
     <p>Welcome to the Interactive Chess Game! This project is a fully functional chess game that emphasizes a visually stunning interface and multiplayer support. Below you'll find an overview of the key features and how to get started.</p>
     <h2>Features</h2>
     <ul>
