@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chess Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multiplayer Chess Game</h1>
+    </header>
+    <main>
+        <div id="turn-indicator">White's Turn</div>
+        <div id="chessboard" class="board"></div>
+        <button id="reset">Reset Game</button>
+    </main>
+    <footer>
+        <p>Made by @achalnm</p>
+        <p>
+            <a href="https://github.com/achalnm" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/achalnm" target="_blank">LinkedIn</a> |
+            <a href="https://instagram.com/achalnm" target="_blank">Instagram</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
