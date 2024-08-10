@@ -25,8 +25,8 @@
         <p>Made by @achalnm</p>
         <p>
             <a href="https://github.com/achalnm" target="_blank" style="color: yellow;">GitHub</a> |
-            <a href="https://www.linkedin.com/in/achalnm" target="_blank" style="color: yellow;">LinkedIn</a> |
-            <a href="https://instagram.com/achalnm" target="_blank" style="color: yellow;">Instagram</a>
+            <a href="https://www.linkedin.com/in/achal-n-35153821b/" target="_blank" style="color: yellow;">LinkedIn</a> |
+            <a href="https://instagram.com/achal_n26" target="_blank" style="color: yellow;">Instagram</a>
         </p>
     </footer>
 </body>
