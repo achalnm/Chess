@@ -1,4 +1,3 @@
-/* General body styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -7,7 +6,6 @@ body {
     margin: 0;
 }
 
-/* Header and footer styling */
 header, footer {
     background-color: #570000;
     color: white;
@@ -24,7 +22,6 @@ main {
     margin: 1rem;
 }
 
-/* Turn Indicator Styling */
 #turn-indicator {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -32,29 +29,26 @@ main {
     color: #333;
 }
 
-/* Board styling */
 #chessboard {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     width: 400px;
     height: 400px;
-    margin-bottom: 2rem; /* Add margin to separate from button */
+    margin-bottom: 2rem;
 }
 
-/* Square styling */
 .square {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem; /* Adjust as needed */
+    font-size: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-/* Default square colors */
 .square.white {
     background-color: #f0d9b5;
 }
@@ -63,22 +57,18 @@ main {
     background-color: #b58863;
 }
 
-/* Hover effects */
 .square.hover {
     background-color: #d8d8d8;
 }
 
-/* Valid move styling */
 .valid-move {
-    background-color: rgba(0, 255, 0, 0.5); /* Light green for valid moves */
+    background-color: rgba(0, 255, 0, 0.5);
 }
 
-/* Invalid move styling */
 .invalid-move {
-    background-color: rgba(255, 0, 0, 0.5); /* Light red for invalid moves */
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
-/* Reset button styling */
 #reset {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -95,6 +85,6 @@ main {
 }
 
 footer a {
-    color: yellow; /* Change link color to yellow */
-    text-decoration: none; /* Remove underline from links */
+    color: yellow;
+    text-decoration: none;
 }

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'wP': '♙', 'bP': '♟'
     };
     const boardState = Array(size).fill().map(() => Array(size).fill(null));
-    let currentTurn = 'w'; // white starts
+    let currentTurn = 'w';
     let selectedSquare = null;
 
     function initBoard() {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function highlightInvalidMove(row, col) {
         const square = document.querySelector(`.square[data-row="${row}"][data-col="${col}"]`);
         square.classList.add('invalid-move');
-        setTimeout(() => square.classList.remove('invalid-move'), 1000); // Remove highlight after 1 second
+        setTimeout(() => square.classList.remove('invalid-move'), 1000);
     }
 
     function clearHighlights() {
@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetPiece = boardState[toRow][toCol];
         const isCapture = targetPiece && targetPiece[0] !== currentTurn;
 
-        // Basic movement rules for pawns
         if (piece && piece[1] === 'P') {
             const direction = piece[0] === 'w' ? 1 : -1;
             const startRow = piece[0] === 'w' ? 1 : 6;
@@ -164,15 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextRow = row + direction;
 
         if (nextRow >= 0 && nextRow < size) {
-            // Move forward by 1 square
             if (!boardState[nextRow][col]) {
                 moves.push({ row: nextRow, col });
-                // Move forward by 2 squares if on start row
                 if (row === startRow && !boardState[nextRow][col]) {
                     moves.push({ row: nextRow + direction, col });
                 }
             }
-            // Captures
             if (col > 0 && boardState[nextRow][col - 1] && boardState[nextRow][col - 1][0] !== piece[0]) {
                 moves.push({ row: nextRow, col: col - 1 });
             }
@@ -188,13 +184,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const kings = boardState.flat().filter(piece => piece && piece.includes('K'));
         if (kings.length < 2) {
             alert(`${currentTurn === 'w' ? 'Black' : 'White'} wins!`);
-            initBoard(); // Reset board after game over
+            initBoard();
         }
     }
 
     function resetGame() {
         initBoard();
-        currentTurn = 'w'; // Reset turn to white
+        currentTurn = 'w';
         updateTurnIndicator();
     }
 
