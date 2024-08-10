@@ -15,13 +15,6 @@
     </ul>
     <h2>Getting Started</h2>
     <p>To get started with the game, clone the repository and open the <code>index.html</code> file in your web browser. The game is ready to play immediately with no additional setup required.</p>
-    <h2>File Structure</h2>
-    <pre>
-    /your-project
-        index.html
-        script.js
-        styles.css
-    </pre>
     <h2>How to Play</h2>
     <p>1. Click on a piece to select it.</p>
     <p>2. Click on a valid square on the board to move the piece.</p>
